@@ -36,3 +36,7 @@ EXEC dbadmin..sp_BlitzFirst
   @OutputTableNameBlitzCache = 'BlitzCache',
   @OutputTableRetentionDays = 7,
   @OutputType = 'none'
+
+
+exec dbadmin..sp_Blitz @OutputType = 'MARKDOWN', @CheckServerInfo = 1;
+
